@@ -8,20 +8,29 @@
 
 import UIKit
 import CoreData
+
 class ListViewController: UITableViewController {
 
     let userCellIdentifier = "userCell"
     let loadingCellIdentifier = "loadingCell"
     let segueIdentifier = "showDetail"
     let fetchTreshold = 10
+    let searchController = UISearchController(searchResultsController: nil)
     
     var interactor = ListInteractor()
+    var filteredUser: [UserViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         interactor.viewController = self
         interactor.retrieveUsers()
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search User"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,10 +66,13 @@ class ListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return interactor.users.count
+        return searchController.isActive ? filteredUser.count : interactor.users.count
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard searchController.isActive == false else {
+            return
+        }
         if interactor.users.count - indexPath.row <= fetchTreshold && !interactor.isFechting {
             interactor.fetchMore()
         }
@@ -68,7 +80,7 @@ class ListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: userCellIdentifier)!
-        let user = interactor.users[indexPath.row]
+        let user = searchController.isActive ? filteredUser[indexPath.row] : interactor.users[indexPath.row]
         cell.textLabel?.text = user.name
         cell.detailTextLabel?.text = user.email
         return cell
@@ -77,7 +89,15 @@ class ListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueIdentifier, let details = segue.destination as? DetailsViewController,
             let index = tableView.indexPathForSelectedRow?.row {
-            details.user = interactor.users[index]
+            details.user = searchController.isActive ? filteredUser[index] : interactor.users[index]
         }
+    }
+}
+
+extension ListViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchText = searchController.searchBar.text?.lowercased() ?? ""
+        filteredUser = interactor.users.filter { return $0.name.lowercased().contains(searchText) || $0.email.lowercased().contains(searchText) }
+        tableView.reloadData()
     }
 }
