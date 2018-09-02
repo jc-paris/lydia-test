@@ -23,7 +23,7 @@
 		F0584A2021315F5500DD9005 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */; };
 		F0584A2221315FA000DD9005 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A2121315FA000DD9005 /* UserService.swift */; };
 		F0584A242131610B00DD9005 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A232131610B00DD9005 /* ListInteractor.swift */; };
-		F0584A3E2131B63200DD9005 /* CoreDataUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */; };
+		F0584A3E2131B63200DD9005 /* LydiaUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A3D2131B63200DD9005 /* LydiaUnitTests.swift */; };
 		F0584A412131B7CC00DD9005 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */; };
 		F0584A422131B99700DD9005 /* lydia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F05849FB21313E4100DD9005 /* lydia.xcdatamodeld */; };
 		F06AD39421367BC700EDA9A0 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39321367BC700EDA9A0 /* Gender.swift */; };
@@ -33,6 +33,7 @@
 		F06AD39E2136A43F00EDA9A0 /* TimeZone+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39D2136A43F00EDA9A0 /* TimeZone+ISO8601.swift */; };
 		F06AD3A02136A69B00EDA9A0 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06AD39F2136A69B00EDA9A0 /* PhoneNumberKit.framework */; };
 		F08C556D213679EA0012884B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08C556C213679EA0012884B /* Location.swift */; };
+		F093526E213BE48A00841ED8 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F093526D213BE48A00841ED8 /* UserViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		F0584A232131610B00DD9005 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		F0584A332131B5EE00DD9005 /* lydiaUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lydiaUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0584A372131B5EE00DD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUnitTests.swift; sourceTree = "<group>"; };
+		F0584A3D2131B63200DD9005 /* LydiaUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LydiaUnitTests.swift; sourceTree = "<group>"; };
 		F06AD39321367BC700EDA9A0 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+APIFormat.swift"; sourceTree = "<group>"; };
 		F06AD39921367DBB00EDA9A0 /* Nationality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nationality.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		F06AD39D2136A43F00EDA9A0 /* TimeZone+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+ISO8601.swift"; sourceTree = "<group>"; };
 		F06AD39F2136A69B00EDA9A0 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneNumberKit.framework; path = Carthage/Build/iOS/PhoneNumberKit.framework; sourceTree = "<group>"; };
 		F08C556C213679EA0012884B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F093526D213BE48A00841ED8 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +192,8 @@
 		F0584A342131B5EE00DD9005 /* lydiaUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */,
+				F0584A3D2131B63200DD9005 /* LydiaUnitTests.swift */,
+				F093526D213BE48A00841ED8 /* UserViewModelTests.swift */,
 				F0584A372131B5EE00DD9005 /* Info.plist */,
 			);
 			path = lydiaUnitTests;
@@ -345,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0584A3E2131B63200DD9005 /* CoreDataUnitTests.swift in Sources */,
+				F0584A3E2131B63200DD9005 /* LydiaUnitTests.swift in Sources */,
+				F093526E213BE48A00841ED8 /* UserViewModelTests.swift in Sources */,
 				F0584A422131B99700DD9005 /* lydia.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

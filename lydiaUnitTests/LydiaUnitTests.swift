@@ -8,10 +8,10 @@
 
 import XCTest
 import CoreData
-@testable import lydia
 import SwiftyJSON
+@testable import lydia
 
-class CoreDataUnitTests: XCTestCase {
+class LydiaUnitTests: XCTestCase {
     
     lazy var persistentContainer: NSPersistentContainer = {
         
@@ -80,7 +80,7 @@ class CoreDataUnitTests: XCTestCase {
     }
     
     // Test JSON parser
-    func testUserResult() {
+    func testParseUserResult() {
         let json = createJSON()
         guard let userResult = lydia.UserResult(json: json) else {
             XCTAssert(false, "Cannot created UserResult from JSON")
