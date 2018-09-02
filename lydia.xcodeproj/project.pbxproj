@@ -8,22 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		F05849F521313E4100DD9005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05849F421313E4100DD9005 /* AppDelegate.swift */; };
-		F05849F721313E4100DD9005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05849F621313E4100DD9005 /* ViewController.swift */; };
+		F05849F721313E4100DD9005 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05849F621313E4100DD9005 /* ListViewController.swift */; };
 		F05849FA21313E4100DD9005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05849F821313E4100DD9005 /* Main.storyboard */; };
 		F05849FD21313E4100DD9005 /* lydia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F05849FB21313E4100DD9005 /* lydia.xcdatamodeld */; };
 		F05849FF21313E4200DD9005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05849FE21313E4200DD9005 /* Assets.xcassets */; };
 		F0584A0221313E4200DD9005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0584A0021313E4200DD9005 /* LaunchScreen.storyboard */; };
+		F0584A0E2131400300DD9005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A0C2131400300DD9005 /* User.swift */; };
+		F0584A112131412400DD9005 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A102131412400DD9005 /* DetailsViewController.swift */; };
+		F0584A132131423E00DD9005 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A122131423E00DD9005 /* UserViewModel.swift */; };
+		F0584A162131473C00DD9005 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A152131473C00DD9005 /* MasterViewController.swift */; };
+		F0584A1821315A8E00DD9005 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A1721315A8E00DD9005 /* UserDataManager.swift */; };
+		F0584A1A21315BA600DD9005 /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A1921315BA600DD9005 /* UserResult.swift */; };
+		F0584A1F21315F5500DD9005 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0584A1D21315F5500DD9005 /* Alamofire.framework */; };
+		F0584A2021315F5500DD9005 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */; };
+		F0584A2221315FA000DD9005 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A2121315FA000DD9005 /* UserService.swift */; };
+		F0584A242131610B00DD9005 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A232131610B00DD9005 /* ListInteractor.swift */; };
+		F0584A3E2131B63200DD9005 /* CoreDataUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */; };
+		F0584A412131B7CC00DD9005 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */; };
+		F0584A422131B99700DD9005 /* lydia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F05849FB21313E4100DD9005 /* lydia.xcdatamodeld */; };
+		F06AD39421367BC700EDA9A0 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39321367BC700EDA9A0 /* Gender.swift */; };
+		F06AD39821367CEA00EDA9A0 /* Date+APIFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */; };
+		F06AD39A21367DBB00EDA9A0 /* Nationality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39921367DBB00EDA9A0 /* Nationality.swift */; };
+		F06AD39C21367FBE00EDA9A0 /* LocationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39B21367FBE00EDA9A0 /* LocationResult.swift */; };
+		F06AD39E2136A43F00EDA9A0 /* TimeZone+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AD39D2136A43F00EDA9A0 /* TimeZone+ISO8601.swift */; };
+		F06AD3A02136A69B00EDA9A0 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06AD39F2136A69B00EDA9A0 /* PhoneNumberKit.framework */; };
+		F08C556D213679EA0012884B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08C556C213679EA0012884B /* Location.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0584A382131B5EE00DD9005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F05849E921313E4000DD9005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F05849F021313E4100DD9005;
+			remoteInfo = lydia;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F05849F121313E4100DD9005 /* lydia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lydia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05849F421313E4100DD9005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F05849F621313E4100DD9005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F05849F621313E4100DD9005 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F05849F921313E4100DD9005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F05849FC21313E4100DD9005 /* lydia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lydia.xcdatamodel; sourceTree = "<group>"; };
 		F05849FE21313E4200DD9005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0584A0121313E4200DD9005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0584A0321313E4200DD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0584A0C2131400300DD9005 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F0584A102131412400DD9005 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F0584A122131423E00DD9005 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F0584A152131473C00DD9005 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F0584A1721315A8E00DD9005 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		F0584A1921315BA600DD9005 /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
+		F0584A1D21315F5500DD9005 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F0584A2121315FA000DD9005 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		F0584A232131610B00DD9005 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		F0584A332131B5EE00DD9005 /* lydiaUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lydiaUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0584A372131B5EE00DD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUnitTests.swift; sourceTree = "<group>"; };
+		F06AD39321367BC700EDA9A0 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+APIFormat.swift"; sourceTree = "<group>"; };
+		F06AD39921367DBB00EDA9A0 /* Nationality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nationality.swift; sourceTree = "<group>"; };
+		F06AD39B21367FBE00EDA9A0 /* LocationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResult.swift; sourceTree = "<group>"; };
+		F06AD39D2136A43F00EDA9A0 /* TimeZone+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+ISO8601.swift"; sourceTree = "<group>"; };
+		F06AD39F2136A69B00EDA9A0 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneNumberKit.framework; path = Carthage/Build/iOS/PhoneNumberKit.framework; sourceTree = "<group>"; };
+		F08C556C213679EA0012884B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +81,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06AD3A02136A69B00EDA9A0 /* PhoneNumberKit.framework in Frameworks */,
+				F0584A1F21315F5500DD9005 /* Alamofire.framework in Frameworks */,
+				F0584A2021315F5500DD9005 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0584A302131B5EE00DD9005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0584A412131B7CC00DD9005 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				F05849F321313E4100DD9005 /* lydia */,
+				F0584A342131B5EE00DD9005 /* lydiaUnitTests */,
 				F05849F221313E4100DD9005 /* Products */,
+				F0584A1C21315F5500DD9005 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F05849F121313E4100DD9005 /* lydia.app */,
+				F0584A332131B5EE00DD9005 /* lydiaUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,14 +121,79 @@
 			isa = PBXGroup;
 			children = (
 				F05849F421313E4100DD9005 /* AppDelegate.swift */,
-				F05849F621313E4100DD9005 /* ViewController.swift */,
+				F0584A28213173ED00DD9005 /* DataManager */,
+				F0584A27213173E000DD9005 /* Services */,
+				F0584A122131423E00DD9005 /* UserViewModel.swift */,
+				F0584A232131610B00DD9005 /* ListInteractor.swift */,
+				F0584A2A2131743800DD9005 /* Views */,
+				F0584A292131741E00DD9005 /* Ressources */,
+				F06AD39D2136A43F00EDA9A0 /* TimeZone+ISO8601.swift */,
+			);
+			path = lydia;
+			sourceTree = "<group>";
+		};
+		F0584A1C21315F5500DD9005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06AD39F2136A69B00EDA9A0 /* PhoneNumberKit.framework */,
+				F0584A1D21315F5500DD9005 /* Alamofire.framework */,
+				F0584A1E21315F5500DD9005 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0584A27213173E000DD9005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F06AD39321367BC700EDA9A0 /* Gender.swift */,
+				F06AD39921367DBB00EDA9A0 /* Nationality.swift */,
+				F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */,
+				F0584A1921315BA600DD9005 /* UserResult.swift */,
+				F06AD39B21367FBE00EDA9A0 /* LocationResult.swift */,
+				F0584A2121315FA000DD9005 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F0584A28213173ED00DD9005 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F0584A0C2131400300DD9005 /* User.swift */,
+				F08C556C213679EA0012884B /* Location.swift */,
+				F0584A1721315A8E00DD9005 /* UserDataManager.swift */,
+				F05849FB21313E4100DD9005 /* lydia.xcdatamodeld */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F0584A292131741E00DD9005 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				F05849F821313E4100DD9005 /* Main.storyboard */,
 				F05849FE21313E4200DD9005 /* Assets.xcassets */,
 				F0584A0021313E4200DD9005 /* LaunchScreen.storyboard */,
 				F0584A0321313E4200DD9005 /* Info.plist */,
-				F05849FB21313E4100DD9005 /* lydia.xcdatamodeld */,
 			);
-			path = lydia;
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F0584A2A2131743800DD9005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0584A152131473C00DD9005 /* MasterViewController.swift */,
+				F05849F621313E4100DD9005 /* ListViewController.swift */,
+				F0584A102131412400DD9005 /* DetailsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0584A342131B5EE00DD9005 /* lydiaUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0584A3D2131B63200DD9005 /* CoreDataUnitTests.swift */,
+				F0584A372131B5EE00DD9005 /* Info.plist */,
+			);
+			path = lydiaUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +206,7 @@
 				F05849ED21313E4100DD9005 /* Sources */,
 				F05849EE21313E4100DD9005 /* Frameworks */,
 				F05849EF21313E4100DD9005 /* Resources */,
+				F0584A1B21315E2500DD9005 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -86,6 +216,24 @@
 			productName = lydia;
 			productReference = F05849F121313E4100DD9005 /* lydia.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F0584A322131B5EE00DD9005 /* lydiaUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0584A3A2131B5EE00DD9005 /* Build configuration list for PBXNativeTarget "lydiaUnitTests" */;
+			buildPhases = (
+				F0584A2F2131B5EE00DD9005 /* Sources */,
+				F0584A302131B5EE00DD9005 /* Frameworks */,
+				F0584A312131B5EE00DD9005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0584A392131B5EE00DD9005 /* PBXTargetDependency */,
+			);
+			name = lydiaUnitTests;
+			productName = lydiaUnitTests;
+			productReference = F0584A332131B5EE00DD9005 /* lydiaUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +247,10 @@
 				TargetAttributes = {
 					F05849F021313E4100DD9005 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					F0584A322131B5EE00DD9005 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F05849F021313E4100DD9005;
 					};
 				};
 			};
@@ -116,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				F05849F021313E4100DD9005 /* lydia */,
+				F0584A322131B5EE00DD9005 /* lydiaUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,20 +284,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0584A312131B5EE00DD9005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0584A1B21315E2500DD9005 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PhoneNumberKit.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework.",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PhoneNumberKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F05849ED21313E4100DD9005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F05849F721313E4100DD9005 /* ViewController.swift in Sources */,
+				F05849F721313E4100DD9005 /* ListViewController.swift in Sources */,
+				F0584A132131423E00DD9005 /* UserViewModel.swift in Sources */,
 				F05849F521313E4100DD9005 /* AppDelegate.swift in Sources */,
+				F06AD39821367CEA00EDA9A0 /* Date+APIFormat.swift in Sources */,
+				F06AD39E2136A43F00EDA9A0 /* TimeZone+ISO8601.swift in Sources */,
+				F06AD39A21367DBB00EDA9A0 /* Nationality.swift in Sources */,
+				F0584A0E2131400300DD9005 /* User.swift in Sources */,
+				F08C556D213679EA0012884B /* Location.swift in Sources */,
+				F06AD39C21367FBE00EDA9A0 /* LocationResult.swift in Sources */,
+				F0584A1821315A8E00DD9005 /* UserDataManager.swift in Sources */,
 				F05849FD21313E4100DD9005 /* lydia.xcdatamodeld in Sources */,
+				F0584A2221315FA000DD9005 /* UserService.swift in Sources */,
+				F06AD39421367BC700EDA9A0 /* Gender.swift in Sources */,
+				F0584A162131473C00DD9005 /* MasterViewController.swift in Sources */,
+				F0584A242131610B00DD9005 /* ListInteractor.swift in Sources */,
+				F0584A112131412400DD9005 /* DetailsViewController.swift in Sources */,
+				F0584A1A21315BA600DD9005 /* UserResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0584A2F2131B5EE00DD9005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0584A3E2131B63200DD9005 /* CoreDataUnitTests.swift in Sources */,
+				F0584A422131B99700DD9005 /* lydia.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0584A392131B5EE00DD9005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F05849F021313E4100DD9005 /* lydia */;
+			targetProxy = F0584A382131B5EE00DD9005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F05849F821313E4100DD9005 /* Main.storyboard */ = {
@@ -285,8 +499,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7XAM3A3CP;
-				INFOPLIST_FILE = lydia/Info.plist;
+				DEVELOPMENT_TEAM = ECJB8MMNL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/lydia/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +521,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7XAM3A3CP;
-				INFOPLIST_FILE = lydia/Info.plist;
+				DEVELOPMENT_TEAM = ECJB8MMNL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/lydia/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +535,54 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0584A3B2131B5EE00DD9005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECJB8MMNL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = lydiaUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jcparis.lydiaUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lydia.app/lydia";
+			};
+			name = Debug;
+		};
+		F0584A3C2131B5EE00DD9005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECJB8MMNL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = lydiaUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jcparis.lydiaUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lydia.app/lydia";
 			};
 			name = Release;
 		};
@@ -333,6 +603,15 @@
 			buildConfigurations = (
 				F0584A0721313E4200DD9005 /* Debug */,
 				F0584A0821313E4200DD9005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0584A3A2131B5EE00DD9005 /* Build configuration list for PBXNativeTarget "lydiaUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0584A3B2131B5EE00DD9005 /* Debug */,
+				F0584A3C2131B5EE00DD9005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
