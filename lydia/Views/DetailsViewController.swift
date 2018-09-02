@@ -64,7 +64,7 @@ class DetailsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(timerFired(_:)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -76,7 +76,7 @@ class DetailsViewController: UIViewController {
         password.isSecureTextEntry = !password.isSecureTextEntry
     }
 
-    @objc func timerFired(_ timer: Timer) {
+    @objc func timerFired() {
         if user == nil {
             return
         }
@@ -102,7 +102,8 @@ class DetailsViewController: UIViewController {
         map.addAnnotation(pinAnnotation!)
         let region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 40, longitudeDelta: 40))
         map.setRegion(region, animated: false)
- 
+        timerFired()
+
         pictureActivity.startAnimating()
         pictureQueue.async { [weak self] in
             guard let url = URL(string: user.picture),
