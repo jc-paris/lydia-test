@@ -136,8 +136,3 @@ extension DetailsViewController: MKMapViewDelegate {
         return annotationView
     }
 }
-
-// For phone: use PhoneNumberKit
-// For address: use CNPostalAddressFormatter.string(from: CNPostalAddress)
-// For timezone: use TimeZone extension
-

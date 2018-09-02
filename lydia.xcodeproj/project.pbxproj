@@ -145,9 +145,9 @@
 		F0584A27213173E000DD9005 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */,
 				F06AD39321367BC700EDA9A0 /* Gender.swift */,
 				F06AD39921367DBB00EDA9A0 /* Nationality.swift */,
-				F06AD39721367CEA00EDA9A0 /* Date+APIFormat.swift */,
 				F0584A1921315BA600DD9005 /* UserResult.swift */,
 				F06AD39B21367FBE00EDA9A0 /* LocationResult.swift */,
 				F0584A2121315FA000DD9005 /* UserService.swift */,

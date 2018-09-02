@@ -30,7 +30,6 @@ public class User: NSManagedObject {
     
     @NSManaged public var location: Location
 
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
         return NSFetchRequest<User>(entityName: "User")
     }

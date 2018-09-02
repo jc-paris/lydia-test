@@ -9,6 +9,7 @@
 import Foundation
 import PhoneNumberKit
 import Contacts
+
 struct UserViewModel {
     fileprivate var user: User
     
@@ -26,7 +27,6 @@ struct UserViewModel {
         guard let phoneNumber = try? phoneNumberKit.parse(user.phone, withRegion: user.nationality.lowercased(), ignoreType: true) else {
             return user.phone
         }
-        print("<< \(user.phone) >> \(phoneNumberKit.format(phoneNumber, toType: .international))")
         return phoneNumberKit.format(phoneNumber, toType: .international)
     }
     var pseudo: String { return user.pseudo }
@@ -59,6 +59,7 @@ struct UserViewModel {
         }
         return String(unicodeScalarView)
     }
+    
     init(user: User) {
         self.user = user
     }

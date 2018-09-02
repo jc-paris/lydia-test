@@ -81,39 +81,3 @@ class ListViewController: UITableViewController {
         }
     }
 }
-
-//extension ListViewController: NSFetchedResultsControllerDelegate {
-//    lazy var fetchedResultsController: NSFetchedResultsController<User> = {
-//        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
-//        let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//
-//        let aFetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
-//        aFetchedResultController.delegate = self
-//
-//        do {
-//            try aFetchedResultController.performFetch()
-//        } catch (let error) {
-//            showError(msg: error.localizedDescription)
-//        }
-//        return aFetchedResultController
-//    }()
-//
-//    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-//        tableView.beginUpdates()
-//    }
-//
-//    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-//        switch type {
-//        case .insert:
-//            tableView.insertRows(at: [newIndexPath!], with: .none)
-//        case .delete:
-//            tableView.deleteRows(at: [indexPath!], with: .none)
-//        case .update, .move:
-//            break
-//        }
-//    }
-//
-//    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-//        tableView.endUpdates()
-//    }
-//}

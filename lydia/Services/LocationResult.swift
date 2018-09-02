@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 struct LocationResult {
-    
     var street: String
     var city: String
     var state: String
