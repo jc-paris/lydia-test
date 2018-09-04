@@ -4,7 +4,7 @@
 
 1. Make sure you have [Carthage](https://github.com/Carthage/Carthage) install using `carthage version`
 2. Run `carthage update` to build all framework
-3. Open `lydia.xcodeproj` to build & run the project
+3. Open `lydia.xcodeproj` to build, test & run the project
 
 ## Estimation
 
