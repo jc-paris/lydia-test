@@ -35,10 +35,10 @@ I prefer not to use library as must as I can. But sometime, I don't want to spen
 ## Troubleshoots
 
 ### UISplitViewController
-I had never used this UIViewController, so I need a little time to document myself about it. I also wanted to handle properly the navigation from UITableViewController to UIViewController and it took me a little more time to find an elegant solution using a `UIStoryboardSegue`. Also, I wanted to display the UITableViewController first on iPhone (not the secondaryViewController by default).
+I had never used this UIViewController, so I needed a little time to document myself about it. I also wanted to handle properly the navigation from UITableViewController to UIViewController and it took me a little more time to find an elegant solution using a `UIStoryboardSegue`. Also, I wanted to display the UITableViewController first on iPhone (not the secondaryViewController by default).
 
 ### XCUnitTest
-Same than above, I have never written a single UnitTest in Xcode. So I spend some time looking how the framework was working (to create to appropriate target after the project was already created, to setup the coredata stack properly for the test environment, solve duplicate model from both target, ...)
+Same than above, I have never written a single UnitTest in Xcode. So I spend some time looking how the framework was working (to create to appropriate target after the project was already created, to setup the coredata stack properly for the test environment, solve duplicate CoreData model from both target, ...)
 
 ### Timezone
 iOS doesn't have a way to convert `+2:00` into a timezone, and randomuser.me doesn't specified the timezone in any other universal format. So I had to come with a custom solution (using date computation) to retrieve the user timezone.
