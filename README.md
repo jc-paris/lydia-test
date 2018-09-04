@@ -56,3 +56,5 @@ Finally, I wanted to make the project perfect. So I took a little more time to :
 I also didn't take into account the iteration process to test and run the project several time (on different device) to make sure all was still working at every step of the project.
 
 All this (throubleshoots + personnal UX touch) lead to the a final 8-10 hours of work.
+
+NB: 🖌I didn't spend too much time for a great UI. I used some default iOS view to get a free great and simple UX on iPhone and iPad, used some emoji, some CALayer manipulation and a map to make the Details view a little bit sexier, but clearly, that doesn't make the app production ready ! 
