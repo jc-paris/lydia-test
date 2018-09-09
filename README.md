@@ -6,6 +6,19 @@
 2. Run `carthage update` to build all framework
 3. Open `lydia.xcodeproj` to build, test & run the project
 
+## Exercice
+```
+Build an app that fetch data from this service : https://api.randomuser.me (use https://randomuser.me/api/1.0/?seed=lydia&results=10&page=1 to get 10 contacts for each api call, and increase page param to load more results.
+The app must display result in a list of first names and last names, and the email under it.
+The app must handle connectivity issue, and display the last results received if it can't retrieve one at launch.
+Touching an item of the list should make appear a details page listing every attributes.
+The app must be in Java, any third-party libraries are allowed but you'll have to justify why you use them.
+
+Evaluate the time it should take before starting, and give it with your work, with the time it really took.
+
+We will discuss every aspects of the exercice (technical, product, ux, ui, …) so don’t focus on one only. You can use all available tools. Take the time to be pride of the result !
+```
+
 ## Estimation
 
 At first, I estimated the project to take about half a day of work (4-5 hours) :
